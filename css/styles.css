@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+
+.contenedor {
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+.contenedor h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #243b55;
+    font-size: 28px;
+}
+
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+label {
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+    font-size: 15px;
+}
+
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+input:focus {
+    border-color: #243b55;
+    box-shadow: 0 0 0 3px rgba(36, 59, 85, 0.15);
+}
+
+
+.estado {
+    min-height: 18px;
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+}
+
+.estado.valid {
+    color: #1f8f4d;
+}
+
+.estado.invalid {
+    color: #c0392b;
+}
+
+
+.validar {
+    margin-top: 10px;
+}
+
+#btnvalidar,#btnlogin {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #243b55;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+#btnvalidar:hover,#btnlogin:hover {
+    background-color: #141e30;
+    transform: translateY(-2px);
+}
+
+
+#btnvalidar:active, #btnlogin:active {
+    transform: translateY(0);
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.modal-contenido {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.modal-contenido h2 {
+    margin-bottom: 15px;
+    color: #243b55;
+}
+
+
+
+
+#mensajeEdad {
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+
+#cerrar {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #777;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#cerrar:hover {
+    color: #000;
+}
+
