@@ -116,3 +116,32 @@ de edad
 validarPassword(password){}, valida que una contraseña cumpla con requisitos. Una mayuscula, una miniscula,
 un numero, un caracter especial y una longitud minima de 8 caracteres
 
+7. Validar Telefono
+   
+```javascript
+  export function validarTelefono(telefono){
+    const expresion = /^\d{10}$/;
+    return expresion.test(telefono);
+}
+```
+
+validarTelefono(telefono){}, este metodo tiene un minimo establecido para el numero de telefono, como esta el codigo actualmente solo acepta numeros de minimo 10 numeros 
+
+<img width="558" height="127" alt="image" src="https://github.com/user-attachments/assets/c78424b3-c885-4c47-a77b-2a9f715203bc" />
+
+<img width="561" height="137" alt="image" src="https://github.com/user-attachments/assets/a72ce919-494a-4ec6-b28a-4b60a78ce515" />
+
+8. Contraseña Insegura
+   
+```javascript
+  export function esPasswordInsegura(password){
+    const repetidos = /(.)\1{3,}/;
+    const secuenciasNum = /0123|1234|2345|3456|4567|5678|6789/;
+    return repetidos.test(password) || secuenciasNum.test(password);
+}
+```
+
+esPasswordInsegura(password){}, este metodo verifica que una contraseña no tenga 4 o mas caracteres repetidos seguidamente y evita numeros ascendentes de 4 digitos
+
+
+
