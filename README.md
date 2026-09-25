@@ -145,3 +145,5 @@ esPasswordInsegura(password){}, este metodo verifica que una contraseña no teng
 
 
 
+# VIDEO DE FUNCIONAMIENTO DE LA LIBRERIA EN UN FORMULARIO
+https://youtu.be/QY3BqcIofnM
