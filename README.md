@@ -1,5 +1,9 @@
-<img width="740" height="365" alt="image" src="https://github.com/user-attachments/assets/8a8481a8-bea8-40fc-a6c5-20533c8e64fd" />
 # Utileria JS ('utileria.js)
+## Alumno
+Martinez Cruz Gael
+
+## Docente
+Martinez Nieto Adelina
 
 ## Problema que resuelve
 Con la creacion de esta libreria se hagiliza la posible creacion de un login, es libreria permite
